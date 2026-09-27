@@ -88,5 +88,3 @@ This repository includes rigorous Unit and Integration tests for both Python and
 colcon test
 colcon test-result --all
 ```
-
-# smart_conveyor_belt_sorting
