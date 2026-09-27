@@ -1,0 +1,19 @@
+# YOLOv8 Dataset Configuration for XRbit Sorter
+
+# Paths (relative to the directory where training runs)
+path: . # dataset root dir
+train: images/train # train images
+val: images/val # val images
+
+# ----------------------------------------------------
+# CHANGE THESE NAMES TO YOUR ACTUAL 8 OBJECTS
+# ----------------------------------------------------
+names:
+  0: object_class_1
+  1: object_class_2
+  2: object_class_3
+  3: object_class_4
+  4: object_class_5
+  5: object_class_6
+  6: object_class_7
+  7: object_class_8

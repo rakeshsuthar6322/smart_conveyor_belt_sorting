@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.8)
+project(xrbit_mcu_firmware)
+find_package(ament_cmake REQUIRED)
+if(BUILD_TESTING)
+  find_package(ament_cmake_gtest REQUIRED)
+  ament_add_gtest(test_stm32_logic test/test_stm32_logic.cpp)
+endif()
+ament_package()

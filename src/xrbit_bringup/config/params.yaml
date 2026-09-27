@@ -1,0 +1,19 @@
+# XRBIT SORTER - GLOBAL CONFIGURATION FILE
+# Edit these values to tune the robot without recompiling any code!
+
+vision_node:
+  ros__parameters:
+    model_path: "yolov8n.pt"      # Change to "best.pt" when custom model is ready
+    camera_source: 0              # 0 for webcam. Change to Basler ID when connected.
+    conf_thresh: 0.65             # Ignore detections below 65% certainty
+
+sorter_node:
+  ros__parameters:
+    pixels_to_mm_ratio: 0.1145    # Calibration: 220mm FOV / 1920 pixels
+    arm1_y_pos: 450.0             # Millimeters down the belt to Arm 1
+    arm2_y_pos: 750.0             # Millimeters down the belt to Arm 2
+
+motion_node:
+  ros__parameters:
+    serial_port: "/dev/ttyACM0"   # Jetson USB port connected to STM32
+    baud_rate: 115200             # Serial speed

@@ -1,0 +1,31 @@
+# ROS 2 Workspace Directories
+build/
+install/
+log/
+
+# Python Virtual Environments & Cache
+.venv/
+env/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# AI Weights & Large Files (Client will download these automatically)
+*.pt
+*.onnx
+runs/
+
+# IDE & OS Files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*~
+
+# C/C++ Build Artifacts
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake

@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  xrbit_robot:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: xrbit_sorter_core
+    
+    # 1. Network Host: Required so ROS 2 nodes can talk to the Basler GigE Camera
+    network_mode: "host"
+    
+    # 2. Privileged & Volumes: Required so the container can access /dev/ttyACM0 (STM32)
+    privileged: true
+    volumes:
+      - /dev:/dev
+      
+    # 3. Auto-start the robot when the Jetson boots up!
+    restart: unless-stopped
