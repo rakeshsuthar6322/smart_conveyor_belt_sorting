@@ -4,6 +4,14 @@ An industrial-grade, AI-powered conveyor sorting system. This repository contain
 
 ## System Documentation & Visuals
 * **Miro Board (Design & Specs):** [XRbit Architecture Board](https://miro.com/app/board/uXjVHhsOcJU=/?share_link_id=101761241481)
+  *This interactive whiteboard contains the complete engineering schematics and planning documents, including:*
+  1. Master System Architecture
+  2. Power Distribution & Hardwired Safety Circuit
+  3. Motion Control & Stepper Subsystem
+  4. Sensor Signal Conditioning & Camera Path
+  5. System Startup & Sort Lifecycle Sequence
+  6. Sensor Signal Conditioning: Active-High to Active-Low
+  7. Complete Bill of Materials (BOM)
 * **Requirements & Testing Specification:** The complete functional, system, and integration test plans are heavily documented in [xrbit_requirements_spec.md](xrbit_requirements_spec.md).
 
 ### Electronics Architecture
@@ -80,3 +88,5 @@ This repository includes rigorous Unit and Integration tests for both Python and
 colcon test
 colcon test-result --all
 ```
+
+# smart_conveyor_belt_sorting
